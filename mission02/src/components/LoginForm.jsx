@@ -11,7 +11,7 @@ function LoginForm() {
         <h1 className="sr-only">NAVER</h1>
         <NaverLogo />
       </div>
-      <form action="/" className="w-[460px] h-[222px] mx-auto">
+      <form action="/" className="w-[460px] h-[222px] mx-auto" method="POST">
         <div className="flex flex-col items-center mt-[50px] gap-y-5">
           <div className="gap-y-2.5 flex flex-col items-center">
             <InputBox boxType={'id'} />
