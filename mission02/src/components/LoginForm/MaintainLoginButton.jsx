@@ -5,7 +5,7 @@ function MaintainLoginButton() {
         type="checkbox"
         name="maintainLogin"
         id="maintainLogin"
-        className="appearance-none before:bg-[url('/src/assets/maintainLoginButton_default.svg')] before:w-6 before:h-6 before:block before:checked:bg-[url('/src/assets/maintainLoginButton_checked.svg')]"
+        className="appearance-none before:bg-[url('/src/assets/maintainLoginButton_default.svg')] before:w-6 before:h-6 before:block before:checked:bg-[url('/src/assets/maintainLoginButton_checked.svg')] before:bg-cover before:bg-no-repeat"
       />
       <label htmlFor="maintainLogin" className="text-sm pl-2">
         로그인 상태 유지
