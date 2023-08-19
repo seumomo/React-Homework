@@ -1,20 +1,25 @@
+import { useState } from 'react';
+import InputId from './LoginForm/InputId';
+import InputPw from './LoginForm/InputPw';
+import IpSecurityButton from './LoginForm/IpSecurityButton';
 import LoginButton from './LoginForm/LoginButton';
 import MaintainLoginButton from './LoginForm/MaintainLoginButton';
-import IpSecurityButton from './LoginForm/IpSecurityButton';
 import NaverLogo from './LoginForm/NaverLogo';
-import InputPw from './LoginForm/InputPw';
-import InputId from './LoginForm/InputId';
-import { useState } from 'react';
-import { validationId } from './LoginForm/validation';
+import { validationId, validationPw } from './LoginForm/validation';
 
 function LoginForm() {
   const [validations, setValidations] = useState({
-    id: '',
-    pw: '',
+    idValue: '',
+    pwValue: '',
     idIsValid: '',
     pwIsValid: '',
-    showMessage: '',
+    idShowMessage: '',
+    pwShowMessage: '',
+    idMessageColor: '',
+    pwMessageColor: '',
   });
+  const idIsValid = validationId(validations.idValue);
+  const pwIsValid = validationPw(validations.pwValue);
   return (
     <div className="mt-[100px] min-w-[769px]">
       <div className="mx-auto w-max">
@@ -25,24 +30,34 @@ function LoginForm() {
         <div className="flex flex-col items-center mt-[50px] gap-y-5">
           <div className="gap-y-2.5 flex flex-col items-center">
             <InputId
-              value={validations.id}
+              value={validations.idValue || ''}
               onChange={e => {
-                setValidations({ id: e.target.value });
+                setValidations({
+                  idValue: e.target.value,
+                  idIsValid: idIsValid,
+                });
               }}
-              isValid={(validations.idIsValid = validationId(validations.id))}
-              // showMessage={setValidations({
-              //   showMessage: validations.idIsValid
-              //     ? '올바른 아이디 형식입니다.'
-              //     : "아이디는 '@naver.com'으로 끝나도록 작성해 주세요.",
-              // })}
+              idShowMessage={
+                idIsValid
+                  ? '올바른 아이디 형식입니다.'
+                  : "아이디는 '@naver.com'으로 끝나도록 작성해 주세요."
+              }
+              idMessageColor={idIsValid ? 'text-[#03CF5D]' : 'text-red-500'}
             />
             <InputPw
-              value={validations.pw}
+              value={validations.pwValue || ''}
               onChange={e => {
-                setValidations({ pw: e.target.value });
+                setValidations({
+                  pwValue: e.target.value,
+                  pwIsValid: pwIsValid,
+                });
               }}
-              isValid={(validations.pwIsValid = validationId(validations.pw))}
-              showMessage={validations.showMessage}
+              pwShowMessage={
+                pwIsValid
+                  ? '올바른 비밀번호 형식입니다.'
+                  : "아이디는 '비밀번호는 숫자, 영어 대소문자, 특수문자(~!@#$%^&*)를 포함하여 8~16자로 작성해 주세요.'으로 끝나도록 작성해 주세요."
+              }
+              pwMessageColor={pwIsValid ? 'text-[#03CF5D]' : 'text-red-500'}
             />
           </div>
           <LoginButton isValid={false} />

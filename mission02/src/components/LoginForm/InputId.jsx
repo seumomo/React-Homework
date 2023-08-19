@@ -1,20 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
-// import { useEffect } from 'react';
-// import { useState } from 'react';
-// import { validationId } from './validation';
-
-function InputId({ value, isValid, showMessage, ...restProps }) {
-  // const [showMessage, setShowMessage] = useState('');
-  const messageColor = isValid ? 'text-[#03CF5D]' : 'text-red-500';
-  // useEffect(() => {
-  // if (value === '') {
-  // setShowMessage('');
-  // } else if (!validationId(value)) {
-  // setShowMessage("아이디는 '@naver.com'으로 끝나도록 작성해 주세요.");
-  // } else {
-  // setShowMessage('올바른 아이디 형식입니다.');
-  // }
-  // }, [value]);
+/* eslint-disable react/prop-types */
+function InputId({ value, idShowMessage, idMessageColor, ...restProps }) {
+  console.log('id: ' + value);
   return (
     <>
       <label htmlFor="inputId" className="sr-only">
@@ -32,8 +18,8 @@ function InputId({ value, isValid, showMessage, ...restProps }) {
         required
         className="w-[460px] h-12 border border-solid border-gray-400 placeholder: pl-[14px] focus:outline-[#03CF5D] hover:border-[#03CF5D]"
       />
-      <p className={`${messageColor} self-start text-xs showMessage`}>
-        {showMessage}
+      <p className={`${idMessageColor} self-start text-xs`}>
+        {value === '' ? '' : idShowMessage}
       </p>
     </>
   );
