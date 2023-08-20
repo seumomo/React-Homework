@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
+import NaverLogo from './LoginForm/NaverLogo';
 import InputId from './LoginForm/InputId';
 import InputPw from './LoginForm/InputPw';
-import IpSecurityButton from './LoginForm/IpSecurityButton';
 import LoginButton from './LoginForm/LoginButton';
 import MaintainLoginButton from './LoginForm/MaintainLoginButton';
-import NaverLogo from './LoginForm/NaverLogo';
-import { useEffect } from 'react';
+import IpSecurityButton from './LoginForm/IpSecurityButton';
+
 import { validationId, validationPw } from './utils';
 
 function LoginForm() {
@@ -13,17 +14,10 @@ function LoginForm() {
     idValue: '',
     pwValue: '',
   });
+
   const [validation, setValidation] = useState({
     idIsValid: '',
     pwIsValid: '',
-    idShowMessage: '',
-    pwShowMessage: '',
-    idMessageColor: '',
-    pwMessageColor: '',
-  });
-  const [isChecked, setIsChecked] = useState({
-    maintainLogin: false,
-    ipSecurity: false,
   });
 
   useEffect(() => {
@@ -31,38 +25,34 @@ function LoginForm() {
       ? setValidation(prevState => ({
           ...prevState,
           idIsValid: true,
-          idShowMessage: '올바른 아이디 형식입니다.',
-          idMessageColor: 'text-[#03CF5D]',
         }))
       : setValidation(prevState => ({
           ...prevState,
           idIsValid: false,
-          idShowMessage: "아이디는 '@naver.com'으로 끝나도록 작성해 주세요.",
-          idMessageColor: 'text-red-500',
         }));
   }, [inputText.idValue]);
+
   useEffect(() => {
     validationPw(inputText.pwValue)
       ? setValidation(prevState => ({
           ...prevState,
           pwIsValid: true,
-          pwShowMessage: '올바른 비밀번호 형식입니다.',
-          pwMessageColor: 'text-[#03CF5D]',
         }))
       : setValidation(prevState => ({
           ...prevState,
           pwIsValid: false,
-          pwShowMessage:
-            '비밀번호는 숫자, 영어 대소문자, 특수문자(~!@#$%^&*)를 포함하여 8~16자로 작성해 주세요.',
-          pwMessageColor: 'text-red-500',
         }));
   }, [inputText.pwValue]);
+
   return (
     <div className="mt-[100px] min-w-[769px]">
       <div className="mx-auto w-max">
         <h1 className="sr-only">NAVER</h1>
         <NaverLogo />
       </div>
+
+      <h2 className="sr-only">로그인 페이지</h2>
+
       <form
         action="./"
         className="w-[460px] h-[222px] mx-auto"
@@ -82,9 +72,9 @@ function LoginForm() {
                   idValue: e.target.value,
                 }));
               }}
-              idShowMessage={validation.idShowMessage}
-              idMessageColor={validation.idMessageColor}
+              idIsValid={validation.idIsValid}
             />
+
             <InputPw
               value={inputText.pwValue}
               onChange={e => {
@@ -93,12 +83,13 @@ function LoginForm() {
                   pwValue: e.target.value,
                 }));
               }}
-              pwShowMessage={validation.pwShowMessage}
-              pwMessageColor={validation.pwMessageColor}
+              pwIsValid={validation.pwIsValid}
             />
           </div>
+
           <LoginButton isValid={validation.idIsValid && validation.pwIsValid} />
         </div>
+
         <div className="flex justify-between mt-3">
           <MaintainLoginButton
             onClick={e => {

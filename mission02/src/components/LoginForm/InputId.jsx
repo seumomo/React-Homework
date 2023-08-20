@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-function InputId({ value, idShowMessage, idMessageColor, ...restProps }) {
+function InputId({ value, idIsValid, ...restProps }) {
   return (
     <>
       <label htmlFor="inputId" className="sr-only">
@@ -17,8 +17,15 @@ function InputId({ value, idShowMessage, idMessageColor, ...restProps }) {
         required
         className="w-[460px] h-12 border border-solid border-gray-400 placeholder: pl-[14px] focus:outline-[#03CF5D] hover:border-[#03CF5D]"
       />
-      <p className={`${idMessageColor} self-start text-xs`}>
-        {value === '' ? '' : idShowMessage}
+      <p
+        className={`${
+          idIsValid ? 'text-[#03CF5D]' : 'text-red-500'
+        } self-start text-xs`}>
+        {value === ''
+          ? ''
+          : idIsValid
+          ? '올바른 아이디 형식입니다.'
+          : "아이디는 '@naver.com'으로 끝나도록 작성해 주세요."}
       </p>
     </>
   );
