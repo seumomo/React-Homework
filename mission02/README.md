@@ -21,9 +21,9 @@
 ## Headings, Component, Directory의 구성은 다음과 같다.
 
 <div align="center">
-<img height="300" alt="스크린샷 2023-08-20 104959" src="https://github.com/seumomo/React-Homework/assets/127176650/72a46759-727b-4ad9-8102-3dc67bbf3060">
-<img height="300" alt="스크린샷 2023-08-20 105110" src="https://github.com/seumomo/React-Homework/assets/127176650/9c66acd6-2e18-4cea-bb86-2da89270a110">
-<img height="300" alt="스크린샷 2023-08-20 135945" src="https://github.com/seumomo/React-Homework/assets/127176650/3444e0cd-b9e5-4102-84ab-cb2d343ace97">
+<img height="250" alt="스크린샷 2023-08-20 104959" src="https://github.com/seumomo/React-Homework/assets/127176650/72a46759-727b-4ad9-8102-3dc67bbf3060">
+<img height="250" alt="스크린샷 2023-08-20 105110" src="https://github.com/seumomo/React-Homework/assets/127176650/9c66acd6-2e18-4cea-bb86-2da89270a110">
+<img height="250" alt="스크린샷 2023-08-20 135945" src="https://github.com/seumomo/React-Homework/assets/127176650/3444e0cd-b9e5-4102-84ab-cb2d343ace97">
 </div>
 
 ---
