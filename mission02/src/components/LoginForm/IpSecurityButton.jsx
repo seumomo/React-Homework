@@ -8,7 +8,7 @@ function IpSecurityButton() {
         type="checkbox"
         name="IpSecurity"
         id="IpSecurity"
-        className="appearance-none after:bg-[url('/src/assets/ipSecurity_OFF.svg')] after:w-7 after:h-3 after:block after:checked:bg-[url('/src/assets/ipSecurity_ON.svg')] after:bg-no-repeat"
+        className="appearance-none after:bg-[url('/src/assets/ipSecurity_OFF.svg')] after:w-7 after:h-3 after:block after:checked:bg-[url('/src/assets/ipSecurity_ON.svg')] after:bg-no-repeat ipSecurityButton"
       />
     </div>
   );

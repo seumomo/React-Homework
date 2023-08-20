@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 function InputPw({ value, pwShowMessage, pwMessageColor, ...restProps }) {
-  console.log('pw: ' + value);
   return (
     <>
       <label htmlFor="inputPw" className="sr-only">

@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 function InputId({ value, idShowMessage, idMessageColor, ...restProps }) {
-  console.log('id: ' + value);
   return (
     <>
       <label htmlFor="inputId" className="sr-only">
