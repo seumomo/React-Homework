@@ -13,7 +13,7 @@
 
 [Figma 시안 보기](https://www.figma.com/file/rLFnyuSJglcFcMTYpRTZ5s/Atomic-Components?type=design&node-id=0%3A1&mode=design&t=MWaJOXCCMcw059Ax-1)
 
-![스크린샷 2023-08-11 174054](https://github.com/seumomo/React-homework/assets/127176650/1e63c22d-5a7e-4a9d-8c28-75096140faed)
+![스크린샷 2023-08-11 174054](https://github.com/seumomo/React-Homework/assets/127176650/2df7bb40-1181-4b96-b885-feae9dfb6e12)
 
 1. Blue 색상 버튼과 Coral 색상 버튼 Component
 2. 최신순, 조회순 Text Component
@@ -27,13 +27,13 @@
 
 <div align="center">
 
-<img alt="스크린샷 2023-08-11 174949" src="https://github.com/seumomo/React-homework/assets/127176650/5e73dc51-463f-49bf-9a83-375af3dea6bb">
+<img width="200" alt="스크린샷 2023-08-11 174949" src="https://github.com/seumomo/React-Homework/assets/127176650/52c66dbc-9195-4221-8df4-6352d3317888">
 
-![스크린샷 2023-08-11 174959](https://github.com/seumomo/React-homework/assets/127176650/f1d7a401-b286-482f-a6e7-121d2b5ec4b3)
+<img width="200" alt="스크린샷 2023-08-11 174949" src="https://github.com/seumomo/React-Homework/assets/127176650/cea42270-e7b6-4585-b6d5-fce50daa60a5">
 
-<img alt="스크린샷 2023-08-11 174246" src="https://github.com/seumomo/React-homework/assets/127176650/2f194b47-93ae-4467-b784-4f432ded825e">
+<img width="200" alt="스크린샷 2023-08-11 174949" src="https://github.com/seumomo/React-Homework/assets/127176650/3ce55c22-11e7-4e07-ae30-ac7cd445f2cb">
 
-![스크린샷 2023-08-11 175007](https://github.com/seumomo/React-homework/assets/127176650/f3defe79-b5c6-48fd-96e5-47b11f176a68)
+<img width="200" alt="스크린샷 2023-08-11 174949" src="https://github.com/seumomo/React-Homework/assets/127176650/1b6136ee-9623-48a4-ab3c-e6972e79db13">
 
 </div>
 
