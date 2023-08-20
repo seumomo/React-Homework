@@ -27,13 +27,13 @@
 
 <div align="center">
 
-<img width="200" alt="스크린샷 2023-08-11 174949" src="https://github.com/seumomo/React-Homework/assets/127176650/52c66dbc-9195-4221-8df4-6352d3317888">
+<img height="100" alt="스크린샷 2023-08-11 174949" src="https://github.com/seumomo/React-Homework/assets/127176650/52c66dbc-9195-4221-8df4-6352d3317888">
 
-<img width="200" alt="스크린샷 2023-08-11 174949" src="https://github.com/seumomo/React-Homework/assets/127176650/cea42270-e7b6-4585-b6d5-fce50daa60a5">
+<img height="100" alt="스크린샷 2023-08-11 174949" src="https://github.com/seumomo/React-Homework/assets/127176650/cea42270-e7b6-4585-b6d5-fce50daa60a5">
 
-<img width="200" alt="스크린샷 2023-08-11 174949" src="https://github.com/seumomo/React-Homework/assets/127176650/3ce55c22-11e7-4e07-ae30-ac7cd445f2cb">
+<img height="100" alt="스크린샷 2023-08-11 174949" src="https://github.com/seumomo/React-Homework/assets/127176650/3ce55c22-11e7-4e07-ae30-ac7cd445f2cb">
 
-<img width="200" alt="스크린샷 2023-08-11 174949" src="https://github.com/seumomo/React-Homework/assets/127176650/1b6136ee-9623-48a4-ab3c-e6972e79db13">
+<img height="100" alt="스크린샷 2023-08-11 174949" src="https://github.com/seumomo/React-Homework/assets/127176650/1b6136ee-9623-48a4-ab3c-e6972e79db13">
 
 </div>
 
