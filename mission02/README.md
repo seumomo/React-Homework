@@ -16,7 +16,7 @@
 <img width="393" alt="스크린샷 2023-08-20 104851" src="https://github.com/seumomo/React-Homework/assets/127176650/b8cd2a1c-7a5c-4b78-b2ba-99e596748ed6">
 </div>
 
-[배포주소](https://seumomo.github.io/naverLoginPage)
+[배포주소](https://seumomo.github.io/naver-login-page/)
 
 ---
 
