@@ -9,7 +9,7 @@ function InputId({ value, idIsValid, ...restProps }) {
         type="email"
         name="inputId"
         id="inputId"
-        value={value}
+        defaultValue={value}
         {...restProps}
         placeholder={'아이디를 입력해 주세요.'}
         pattern={'.+@naver.com$'}

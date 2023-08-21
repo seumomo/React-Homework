@@ -8,6 +8,7 @@ import MaintainLoginButton from './LoginForm/MaintainLoginButton';
 import IpSecurityButton from './LoginForm/IpSecurityButton';
 
 import { validationId, validationPw } from './utils';
+import { debounce } from 'lodash';
 
 function LoginForm() {
   const [inputText, setInputText] = useState({
@@ -44,6 +45,14 @@ function LoginForm() {
         }));
   }, [inputText.pwValue]);
 
+  const onChangeId = debounce(e => {
+    setInputText(prevState => ({ ...prevState, idValue: e.target.value }));
+  }, 300);
+
+  const onChangePw = debounce(e => {
+    setInputText(prevState => ({ ...prevState, pwValue: e.target.value }));
+  }, 300);
+
   return (
     <div className="mt-[100px] min-w-[769px]">
       <div className="mx-auto w-max">
@@ -67,10 +76,7 @@ function LoginForm() {
             <InputId
               value={inputText.idValue}
               onChange={e => {
-                setInputText(prevState => ({
-                  ...prevState,
-                  idValue: e.target.value,
-                }));
+                onChangeId(e);
               }}
               idIsValid={validation.idIsValid}
             />
@@ -78,10 +84,7 @@ function LoginForm() {
             <InputPw
               value={inputText.pwValue}
               onChange={e => {
-                setInputText(prevState => ({
-                  ...prevState,
-                  pwValue: e.target.value,
-                }));
+                onChangePw(e);
               }}
               pwIsValid={validation.pwIsValid}
             />

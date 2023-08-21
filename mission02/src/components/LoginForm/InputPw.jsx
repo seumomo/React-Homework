@@ -9,7 +9,7 @@ function InputPw({ value, pwIsValid, ...restProps }) {
         type="password"
         name="inputPw"
         id="inputPw"
-        value={value}
+        defaultValue={value}
         {...restProps}
         placeholder={'비밀번호를 입력해 주세요.'}
         pattern={'^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[~!@#$%^&*]).{8,16}$'}

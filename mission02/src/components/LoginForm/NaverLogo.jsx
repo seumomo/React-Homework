@@ -2,7 +2,7 @@ function NaverLogo() {
   return (
     <a
       href="/"
-      className="bg-[url('/public/naverLogo.svg')] w-[230px] h-11 bg-no-repeat block"
+      className="bg-[url('/naverLogo.svg')] w-[230px] h-11 bg-no-repeat block"
       onClick={e => {
         e.preventDefault();
         window.location.href = 'https://www.naver.com';
