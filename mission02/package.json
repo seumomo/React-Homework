@@ -27,6 +27,5 @@
     "post": "^0.0.1",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.5"
-  },
-  "homepage": "http://seumomo.com/naverLogin"
+  }
 }
