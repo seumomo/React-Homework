@@ -1,11 +1,11 @@
-import LoginForm from './pages/LoginForm';
+import { StrictMode } from 'react';
+import Landing from './pages/Landing';
 
 function App() {
   return (
-    <>
-      <h1>To Do List</h1>
-      <LoginForm />;
-    </>
+    <StrictMode>
+      <Landing />
+    </StrictMode>
   );
 }
 
