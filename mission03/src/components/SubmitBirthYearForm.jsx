@@ -17,7 +17,9 @@ function SubmitBirthYearForm() {
           maxLength={4}
           title="출생년도 4자리를 입력해 주세요."
         />
-        <button type="submit">년에 태어났어요 🎉</button>
+        <button type="submit" className="font-bold">
+          년에 태어났어요 🎉
+        </button>
       </div>
     </form>
   );

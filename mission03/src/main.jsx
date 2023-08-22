@@ -17,11 +17,11 @@ const router = createBrowserRouter([
         path: '/',
         element: <Landing />,
       },
+      {
+        path: '/getbirthyear',
+        element: <GetBirthYear />,
+      },
     ],
-  },
-  {
-    path: '/getbirthyear',
-    element: <GetBirthYear />,
   },
 ]);
 
