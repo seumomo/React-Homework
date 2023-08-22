@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: 'getbirthyear/submit',
+    path: '/getbirthyear',
     element: <GetBirthYear />,
   },
 ]);

@@ -1,7 +1,7 @@
-import React from 'react';
+import SubmitBirthYearForm from '../components/SubmitBirthYearForm';
 
 function GetBirthYear() {
-  return <div>GetBirthYear</div>;
+  return <SubmitBirthYearForm />;
 }
 
 export default GetBirthYear;
