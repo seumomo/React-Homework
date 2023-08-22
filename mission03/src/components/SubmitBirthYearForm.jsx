@@ -1,6 +1,6 @@
 function SubmitBirthYearForm() {
   return (
-    <form className="flex flex-col mt-20">
+    <form className="flex flex-col items-center gap-y-10">
       <label htmlFor="getBirthYear" className="text-5xl">
         언제 태어났나요?
       </label>

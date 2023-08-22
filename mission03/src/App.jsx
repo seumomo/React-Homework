@@ -1,5 +1,5 @@
 import { StrictMode } from 'react';
-import Landing from './pages/Landing';
+import Landing from './routes/Landing';
 
 function App() {
   return (
