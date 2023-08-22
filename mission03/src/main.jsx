@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './index.css';
+import RootLayout from './layout/RootLayout';
 import ErrorPage from './routes/ErrorPage';
-import Landing from './routes/Landing';
 import GetBirthYear from './routes/GetBirthYear';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Landing />,
+    element: <RootLayout />,
     errorElement: <ErrorPage />,
   },
   {

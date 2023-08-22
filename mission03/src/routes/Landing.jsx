@@ -1,13 +1,8 @@
-import KoreanZodiacSign from '../components/KoreanZodiacSign';
-import Logo from '../components/Logo';
-
 function Landing() {
   return (
     <>
-      <div className="flex flex-col gap-y-14 text-center mx-auto mt-28">
-        <Logo destination={'/getbirthyear'} />
-
-        <div className="flex flex-col gap-y-10 mt-10 mx-auto">
+      <div className="flex flex-col gap-y-14 text-center mx-auto">
+        <div className="flex flex-col gap-y-10 mx-auto">
           <p className="text-3xl">
             내가 <span className="text-red-700 font-semibold">로또</span>를...
             사도 될까? 🤔
@@ -29,8 +24,6 @@ function Landing() {
             물론! 좋은 꿈을 꾸지 않으셨어도 확인 가능합니다 😁
           </p>
         </div>
-
-        <KoreanZodiacSign />
       </div>
     </>
   );
