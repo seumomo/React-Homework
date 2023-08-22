@@ -1,3 +1,5 @@
+import GoNextButton from '../components/GoNextButton';
+
 function Landing() {
   return (
     <>
@@ -23,6 +25,8 @@ function Landing() {
           <p className="text-2xl">
             물론! 좋은 꿈을 꾸지 않으셨어도 확인 가능합니다 😁
           </p>
+
+          <GoNextButton />
         </div>
       </div>
     </>

@@ -5,12 +5,19 @@ import './index.css';
 import RootLayout from './layout/RootLayout';
 import ErrorPage from './routes/ErrorPage';
 import GetBirthYear from './routes/GetBirthYear';
+import Landing from './routes/Landing';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <RootLayout />,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '/',
+        element: <Landing />,
+      },
+    ],
   },
   {
     path: '/getbirthyear',
