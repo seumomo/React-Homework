@@ -1,21 +1,45 @@
 function KoreanZodiacSign() {
   return (
-    <div className="mx-auto flex flex-col gap-y-16 w-2/3">
+    <div className="mx-auto flex w-2/3 flex-col gap-y-16 transition-all">
       <div className="flex justify-between">
-        <span className="text-5xl hover:scale-150 transition-all">🐭</span>
-        <span className="text-5xl hover:scale-150 transition-all">🐮</span>
-        <span className="text-5xl hover:scale-150 transition-all">🐯</span>
-        <span className="text-5xl hover:scale-150 transition-all">🐰</span>
-        <span className="text-5xl hover:scale-150 transition-all">🐲</span>
-        <span className="text-5xl hover:scale-150 transition-all">🐍</span>
+        <span className="right-0-0 text-5xl transition-all hover:scale-150">
+          🐭
+        </span>
+        <span className="right-0-0 text-5xl transition-all hover:scale-150">
+          🐮
+        </span>
+        <span className="right-0-0 text-5xl transition-all hover:scale-150">
+          🐯
+        </span>
+        <span className="right-0-0 text-5xl transition-all hover:scale-150">
+          🐰
+        </span>
+        <span className="right-0-0 text-5xl transition-all hover:scale-150">
+          🐲
+        </span>
+        <span className="right-0-0 text-5xl transition-all hover:scale-150">
+          🐍
+        </span>
       </div>
       <div className="flex justify-between">
-        <span className="text-5xl hover:scale-150 transition-all">🐴</span>
-        <span className="text-5xl hover:scale-150 transition-all">🐑</span>
-        <span className="text-5xl hover:scale-150 transition-all">🐵</span>
-        <span className="text-5xl hover:scale-150 transition-all">🐔</span>
-        <span className="text-5xl hover:scale-150 transition-all">🐶</span>
-        <span className="text-5xl hover:scale-150 transition-all">🐷</span>
+        <span className="right-0-0 text-5xl transition-all hover:scale-150">
+          🐴
+        </span>
+        <span className="right-0-0 text-5xl transition-all hover:scale-150">
+          🐑
+        </span>
+        <span className="right-0-0 text-5xl transition-all hover:scale-150">
+          🐵
+        </span>
+        <span className="right-0-0 text-5xl transition-all hover:scale-150">
+          🐔
+        </span>
+        <span className="right-0-0 text-5xl transition-all hover:scale-150">
+          🐶
+        </span>
+        <span className="right-0-0 text-5xl transition-all hover:scale-150">
+          🐷
+        </span>
       </div>
     </div>
   );

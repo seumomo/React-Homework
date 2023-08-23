@@ -1,10 +1,7 @@
-import { getCurrentYear } from "../utils";
+import getKoreanZodiacSign from "./../utils/getKoreanZodiacSign";
 
 function SubmitBirthYearForm({ value, onChange }) {
   const isFull = value.length === 4;
-  const isDisable = () => {
-    return isFull ? false : true;
-  };
 
   return (
     <form className="flex flex-col items-center gap-y-10">
@@ -29,8 +26,8 @@ function SubmitBirthYearForm({ value, onChange }) {
         />
         <button
           type="submit"
-          className={`disabled: ml-4 font-bold hover:text-orange-500 disabled:text-black`}
-          disabled={isDisable()}
+          className={`disabled: ml-4 font-bold transition-all duration-500 enabled:text-orange-500 disabled:text-black`}
+          disabled={isFull ? false : true}
         >
           년에 태어났어요 🎉
         </button>
