@@ -1,5 +1,6 @@
 import useYear from "../hooks/useYear";
 import getKoreanZodiacSign from "../utils/getKoreanZodiacSign";
+import limitInputNumber from "./../utils/limitInputNumber";
 
 function SubmitBirthYearForm() {
   const [year, handleChangeYear] = useYear();
@@ -33,10 +34,7 @@ function SubmitBirthYearForm() {
             placeholder="출생년도 4자리"
             minLength={4}
             maxLength={4}
-            onInput={(e) => {
-              if (e.target.value.length > e.target.maxLength)
-                e.target.value = e.target.value.slice(0, e.target.maxLength);
-            }}
+            onInput={limitInputNumber}
             title="출생년도 4자리를 입력해 주세요."
             defaultValue={year}
             onChange={handleChangeYear}
