@@ -19,7 +19,10 @@ function GetBirthYear() {
 
   return (
     <div className="mt-20 flex flex-col gap-y-14">
-      <form className="flex flex-col items-center gap-y-10">
+      <form
+        className="flex flex-col items-center gap-y-10"
+        onSubmit={(e) => e.preventDefault()}
+      >
         <label htmlFor="getBirthYear" className="text-5xl">
           몇 년도에 태어나셨나요?
         </label>
