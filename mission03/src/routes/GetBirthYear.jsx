@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import useYear from "../hooks/useYear";
 import getKoreanZodiacSign from "../utils/getKoreanZodiacSign";
 import limitInputNumber from "./../utils/limitInputNumber";
@@ -5,16 +6,12 @@ import limitInputNumber from "./../utils/limitInputNumber";
 function GetBirthYear() {
   const [year, handleChangeYear] = useYear();
   const isFull = year.length === 4;
+  const navigate = useNavigate();
 
   function handleCheckYear(e) {
     e.preventDefault();
 
-    if (year.length === 4) {
-      getKoreanZodiacSign(year);
-      return true;
-    } else {
-      return false;
-    }
+    getKoreanZodiacSign(year) ? navigate("/horoscope") : null;
   }
 
   return (
