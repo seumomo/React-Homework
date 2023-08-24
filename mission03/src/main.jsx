@@ -6,6 +6,7 @@ import RootLayout from "./layout/RootLayout";
 import ErrorPage from "./routes/ErrorPage";
 import GetBirthYear from "./routes/GetBirthYear";
 import Landing from "./routes/Landing";
+import YearProvider from "./contexts/Year";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <YearProvider>
+      <RouterProvider router={router} />
+    </YearProvider>
   </React.StrictMode>,
 );

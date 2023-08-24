@@ -2,7 +2,7 @@
 import { createContext, useState } from "react";
 import debounce from "../utils/debounce";
 
-const YearContext = createContext();
+export const YearContext = createContext({});
 
 function YearProvider({ displayName = "YearContext", children }) {
   const [year, setYear] = useState("");
@@ -10,12 +10,10 @@ function YearProvider({ displayName = "YearContext", children }) {
     setYear(e.target.value);
   });
 
+  const value = [year, handleChangeYear];
+
   return (
-    <YearContext.Provider
-      value={year}
-      onChange={handleChangeYear}
-      displayName={displayName}
-    >
+    <YearContext.Provider value={value} displayName={displayName}>
       {children}
     </YearContext.Provider>
   );

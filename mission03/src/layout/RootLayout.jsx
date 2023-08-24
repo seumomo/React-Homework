@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import YearProvider from "../contexts/Year";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -9,9 +8,7 @@ function RootLayout() {
       <Header />
 
       <main className="h-[424px]">
-        <YearProvider>
-          <Outlet className="transition-all" />
-        </YearProvider>
+        <Outlet />
       </main>
 
       <Footer />

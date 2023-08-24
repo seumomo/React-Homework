@@ -1,7 +1,9 @@
-import getKoreanZodiacSign from "./../utils/getKoreanZodiacSign";
+import useYear from "../hooks/useYear";
 
-function SubmitBirthYearForm({ value, onChange }) {
-  const isFull = value.length === 4;
+function SubmitBirthYearForm() {
+  const [year, handleChangeYear] = useYear();
+
+  const isFull = year.length === 4;
 
   return (
     <form className="flex flex-col items-center gap-y-10">
@@ -21,8 +23,8 @@ function SubmitBirthYearForm({ value, onChange }) {
           minLength={4}
           maxLength={4}
           title="출생년도 4자리를 입력해 주세요."
-          defaultValue={value}
-          onChange={onChange}
+          defaultValue={year}
+          onChange={handleChangeYear}
         />
         <button
           type="submit"
