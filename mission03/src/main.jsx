@@ -7,6 +7,7 @@ import ErrorPage from "./routes/ErrorPage";
 import GetBirthYear from "./routes/GetBirthYear";
 import Landing from "./routes/Landing";
 import YearProvider from "./contexts/Year";
+import Horoscope from "./routes/Horoscope";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/getbirthyear",
         element: <GetBirthYear />,
+      },
+      {
+        path: "/horoscope",
+        element: <Horoscope />,
       },
     ],
   },
