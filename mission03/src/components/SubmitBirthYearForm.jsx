@@ -1,8 +1,8 @@
 import useYear from "../hooks/useYear";
+import getKoreanZodiacSign from "../utils/getKoreanZodiacSign";
 
 function SubmitBirthYearForm() {
   const [year, handleChangeYear] = useYear();
-
   const isFull = year.length === 4;
 
   return (
@@ -30,13 +30,18 @@ function SubmitBirthYearForm() {
           type="submit"
           className={`disabled: ml-4 font-bold transition-all duration-500 enabled:text-orange-500 disabled:text-black`}
           disabled={isFull ? false : true}
+          onClick={(e) => {
+            e.preventDefault();
+            getKoreanZodiacSign(year);
+          }}
         >
           년에 태어났어요 🎉
         </button>
+        {isFull}
         <p
           className={`relative right-0 ${
-            isFull ? "visible -left-11" : "invisible left-[9999px]"
-          } -top-3 text-right text-lg text-green-500 transition-all duration-500`}
+            isFull ? "visible opacity-100" : "invisible opacity-0"
+          } -top-3 right-11 text-right text-lg text-green-500 transition-all duration-500`}
         >
           👆 여기를 눌러주세요! 👆
         </p>
