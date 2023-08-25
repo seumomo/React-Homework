@@ -23,11 +23,11 @@ const router = createBrowserRouter([
         path: "/getbirthyear",
         element: <GetBirthYear />,
       },
-      {
-        path: "/horoscope",
-        element: <Horoscope />,
-      },
     ],
+  },
+  {
+    path: "/horoscope",
+    element: <Horoscope />,
   },
 ]);
 
