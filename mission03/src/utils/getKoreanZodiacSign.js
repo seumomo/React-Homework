@@ -13,6 +13,7 @@ function getKoreanZodiacSign(year) {
     alert("아쉽게도, 미래에서 오신 분은 이 서비스를 이용하실 수 없습니다 😭");
     return;
   }
+
   let koreanZodiacSign;
 
   switch (year % 12) {

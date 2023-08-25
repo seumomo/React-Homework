@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useRouteError } from "react-router-dom";
 
 function ErrorPage() {
@@ -19,6 +20,12 @@ function ErrorPage() {
       <p className="text-lg text-red-500">
         <i>{error.statusText || error.message}</i>
       </p>
+      <Link
+        className="flex h-16 w-52 items-center justify-center rounded-full bg-green-500 text-2xl text-white hover:scale-110"
+        to="/"
+      >
+        홈으로 돌아가기
+      </Link>
     </div>
   );
 }

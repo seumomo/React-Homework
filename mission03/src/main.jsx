@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import BirthProvider from "./contexts/Birth";
 import "./index.css";
 import RootLayout from "./layout/RootLayout";
 import ErrorPage from "./routes/ErrorPage";
 import GetBirthYear from "./routes/GetBirthYear";
-import Landing from "./routes/Landing";
-import YearProvider from "./contexts/Year";
 import Horoscope from "./routes/Horoscope";
+import Landing from "./routes/Landing";
 
 const router = createBrowserRouter([
   {
@@ -33,8 +33,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <YearProvider>
+    <BirthProvider>
       <RouterProvider router={router} />
-    </YearProvider>
+    </BirthProvider>
+    ,
   </React.StrictMode>,
 );

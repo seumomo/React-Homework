@@ -1,17 +1,18 @@
 import { useNavigate } from "react-router-dom";
-import useYear from "../hooks/useYear";
-import getKoreanZodiacSign from "../utils/getKoreanZodiacSign";
+import useBirth from "../hooks/useBirth";
 import limitInputNumber from "./../utils/limitInputNumber";
 
 function GetBirthYear() {
-  const [year, handleChangeYear] = useYear();
-  const isFull = year.length === 4;
+  const [birth, handleChangeYear, getSign] = useBirth();
+  const isFull = birth.year.length === 4;
   const navigate = useNavigate();
 
-  function handleCheckYear(e) {
+  function handleCheckBirth(e) {
     e.preventDefault();
-
-    getKoreanZodiacSign(year) ? navigate("/horoscope") : null;
+    navigate("/horoscope");
+    if (getSign(birth.year) === undefined) {
+      return;
+    }
   }
 
   return (
@@ -38,7 +39,7 @@ function GetBirthYear() {
               maxLength={4}
               onInput={limitInputNumber}
               title="출생년도 4자리를 입력해 주세요."
-              defaultValue={year}
+              defaultValue={birth.year}
               onChange={handleChangeYear}
             />
             <span className="ml-4 font-bold">년에 태어났어요 🎉</span>
@@ -46,7 +47,7 @@ function GetBirthYear() {
           {isFull ? (
             <button
               className="text-3xl font-bold text-green-500 transition-all"
-              onClick={handleCheckYear}
+              onClick={handleCheckBirth}
             >
               운세보러 가기! 👉
             </button>

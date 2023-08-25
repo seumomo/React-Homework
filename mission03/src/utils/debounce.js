@@ -1,4 +1,4 @@
-export default function debounce(callback, timeout = 300) {
+function debounce(callback, timeout = 300) {
   let cleanup;
 
   return (...args) => {
@@ -6,3 +6,5 @@ export default function debounce(callback, timeout = 300) {
     cleanup = setTimeout(callback.bind(null, ...args), timeout);
   };
 }
+
+export default debounce;
