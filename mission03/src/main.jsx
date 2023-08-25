@@ -36,6 +36,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BirthProvider>
       <RouterProvider router={router} />
     </BirthProvider>
-    ,
   </React.StrictMode>,
 );

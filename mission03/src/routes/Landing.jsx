@@ -4,6 +4,7 @@ function Landing() {
   return (
     <>
       <div className="mx-auto flex flex-col gap-y-14 text-center">
+        <h2 className="sr-only">서비스 소개</h2>
         <div className="mx-auto flex flex-col gap-y-10">
           <p className="text-3xl">
             내가 <span className="font-semibold text-red-700">로또</span>를...
@@ -16,10 +17,12 @@ function Landing() {
             <span>위의 빨간 버튼을 클릭하고</span>{" "}
             <div>
               <span>오늘의 </span>
-              <h2 className="inline text-4xl font-semibold text-red-700">
-                띠별 운세
-              </h2>
-              <span>를 확인해 보세요!</span>
+              <h3 className="inline">
+                <span className="inline text-4xl font-semibold text-red-700">
+                  띠별 운세
+                </span>
+                <span>를 확인해 보세요!</span>
+              </h3>
             </div>
           </div>
           <p className="text-2xl">

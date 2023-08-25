@@ -17,6 +17,7 @@ function GetBirthYear() {
 
   return (
     <div className="mt-20 flex flex-col gap-y-14">
+      <h2 className="sr-only">출생연도 입력하기</h2>
       <form
         className="flex flex-col items-center gap-y-10"
         onSubmit={(e) => e.preventDefault()}
