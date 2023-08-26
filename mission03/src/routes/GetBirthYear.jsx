@@ -46,16 +46,17 @@ function GetBirthYear() {
             />
             <span className="ml-4 font-bold">년에 태어났어요 🎉</span>
           </div>
-          {isFull ? (
-            <button
-              className="text-3xl font-bold text-green-500 transition-all hover:scale-150"
-              onClick={handleCheckBirth}
-            >
-              운세보러 가기! 👉
-            </button>
-          ) : (
-            ""
-          )}
+
+          <button
+            className={`scale-125 text-3xl font-bold text-green-500 transition-all duration-500 ${
+              isFull ? "translate-x-0 hover:scale-150" : "translate-x-[9999px]"
+            }`}
+            disabled={isFull ? false : true}
+            aria-hidden={isFull ? false : true}
+            onClick={handleCheckBirth}
+          >
+            운세보러 가기! 👉
+          </button>
         </div>
       </form>
     </div>
