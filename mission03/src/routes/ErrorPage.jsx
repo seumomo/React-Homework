@@ -20,7 +20,7 @@ function ErrorPage() {
       </p>
       <Link
         className="flex h-16 w-52 items-center justify-center rounded-full bg-green-500 text-2xl text-white hover:scale-110"
-        to="/"
+        to="/todays-horoscope"
       >
         홈으로 돌아가기
       </Link>

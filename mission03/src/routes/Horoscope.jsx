@@ -13,8 +13,10 @@ function Horoscope() {
     koreanZodiacSign: "",
     comment: "",
   });
-  const handleClickSign = (e) => {
-    document.querySelector("#modal").classList.remove("hidden");
+  const [, forceRendering] = useState();
+
+  const handleOpenModal = (e) => {
+    document.querySelector("#modalContainer").classList.remove("hidden");
 
     setTargetHoroscope((prevState) => ({
       ...prevState,
@@ -33,8 +35,10 @@ function Horoscope() {
       }
     });
   };
+
   const handleCloseModal = () => {
-    document.querySelector("#modal").classList.add("hidden");
+    document.querySelector("#modalContainer").classList.add("hidden");
+    forceRendering({});
   };
 
   return (
@@ -53,9 +57,9 @@ function Horoscope() {
         </div>
       </div>
 
-      <Modal value={targetHoroscope} handleCloseModal={handleCloseModal} />
+      <Modal value={targetHoroscope} onClick={handleCloseModal} />
       <GoHomeButton />
-      <Navigation onClick={handleClickSign} />
+      <Navigation onClick={handleOpenModal} />
     </div>
   );
 }

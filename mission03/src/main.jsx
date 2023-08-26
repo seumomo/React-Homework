@@ -11,16 +11,16 @@ import Landing from "./routes/Landing";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/todays-horoscope",
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: "/todays-horoscope",
         element: <Landing />,
       },
       {
-        path: "/getbirthyear",
+        path: "/todays-horoscope/getbirthyear",
         element: <GetBirthYear />,
       },
     ],

@@ -49,7 +49,7 @@ function GetBirthYear() {
           </div>
 
           <button
-            className={`scale-125 text-3xl font-bold text-green-500 transition-all duration-500 ${
+            className={`scale-125 text-3xl font-bold text-green-500 transition-all duration-[400ms] ${
               isFull ? "translate-x-0 hover:scale-150" : "translate-x-[9999px]"
             }`}
             disabled={isFull ? false : true}
