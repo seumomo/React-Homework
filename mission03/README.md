@@ -14,9 +14,7 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=black" height="30px"> <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=black" height="30px"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" height="30px">
-
-<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" height="30px"> <img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=black" height="30px">
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=black" height="30px"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" height="30px"> <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" height="30px"> <img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=black" height="30px">
 
 <img src="https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=black" height="30px"> <img src="https://img.shields.io/badge/reactrouter-CA4245?style=for-the-badge&logo=reactrouter&logoColor=black" height="30px"> <img src="https://img.shields.io/badge/greensock-88CE02?style=for-the-badge&logo=greensock&logoColor=black" height="30px"> <img src="https://img.shields.io/badge/pocketbase-B8DBE4?style=for-the-badge&logo=pocketbase&logoColor=black" height="30px">
 
@@ -33,12 +31,10 @@
 
 ---
 
-## Headings, Component, Directory의 구성은 다음과 같다.
+## Directory의 구성은 다음과 같다.
 
 <div align="center">
-<img height="200" alt="스크린샷 2023-08-20 104959" src="https://github.com/seumomo/React-Homework/assets/127176650/72a46759-727b-4ad9-8102-3dc67bbf3060">
-<img height="200" alt="스크린샷 2023-08-20 105110" src="https://github.com/seumomo/React-Homework/assets/127176650/9c66acd6-2e18-4cea-bb86-2da89270a110">
-<img height="200" alt="스크린샷 2023-08-20 135945" src="https://github.com/seumomo/React-Homework/assets/127176650/3444e0cd-b9e5-4102-84ab-cb2d343ace97">
+<img height="500" alt="스크린샷 2023-08-27 073054" src="https://github.com/seumomo/Project-F4/assets/127176650/39fac7a4-daad-4c77-ac66-ebbf217c454b">
 </div>
 
 ---
