@@ -13,7 +13,7 @@ function BirthProvider({ displayName = "BirthContext", children }) {
 
   const handleChangeYear = debounce((e) => {
     setBirth((prevState) => ({ ...prevState, year: e.target.value }));
-  }, 200);
+  }, 150);
 
   const getSign = () => {
     setBirth((prevState) => ({

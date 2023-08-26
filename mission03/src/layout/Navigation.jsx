@@ -1,5 +1,5 @@
-import { records } from "../api/pocketbase";
 import { func } from "prop-types";
+import { records } from "../api/pocketbase";
 
 function Navigation({ onClick }) {
   return (

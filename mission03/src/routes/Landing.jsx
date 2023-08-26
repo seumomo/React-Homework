@@ -5,6 +5,7 @@ function Landing() {
     <>
       <div className="mx-auto flex flex-col gap-y-14 text-center">
         <h2 className="sr-only">서비스 소개</h2>
+
         <div className="mx-auto flex flex-col gap-y-10">
           <p className="text-3xl">
             내가 <span className="font-semibold text-red-700">로또</span>를...
@@ -25,6 +26,7 @@ function Landing() {
               </h3>
             </div>
           </div>
+
           <p className="text-2xl">
             물론! 좋은 꿈을 꾸지 않으셨어도 확인 가능합니다 😁
           </p>

@@ -1,4 +1,4 @@
-import { shape, string, func } from "prop-types";
+import { func, shape, string } from "prop-types";
 
 function Modal({ value, handleCloseModal }) {
   return (
@@ -18,7 +18,9 @@ function Modal({ value, handleCloseModal }) {
           </span>
           <span className="sr-only">닫기 버튼</span>
         </button>
+
         <h3 className="text-2xl font-bold">나와 다른 띠의 오늘의 운세😉</h3>
+
         <p className="text-xl font-semibold">{value.koreanZodiacSign}</p>
         <p>{value.comment}</p>
       </div>

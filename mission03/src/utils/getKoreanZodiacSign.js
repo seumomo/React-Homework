@@ -1,6 +1,11 @@
 import getCurrentYear from "./getCurrentYear";
 
 function getKoreanZodiacSign(year) {
+  if (typeof year !== "number" && typeof year !== "string") {
+    throw new Error(
+      "getKoreanZodiacSign 함수의 인수는 number 또는 string type이어야 합니다.",
+    );
+  }
   year = Number(year);
   const currentYear = getCurrentYear();
 

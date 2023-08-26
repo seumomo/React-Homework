@@ -1,20 +1,21 @@
 import { useNavigate } from "react-router-dom";
 import useBirth from "../hooks/useBirth";
 import limitInputNumber from "./../utils/limitInputNumber";
+import getCurrentYear from "../utils/getCurrentYear";
 
 function GetBirthYear() {
   const { birth, handleChangeYear, getSign } = useBirth();
   const isFull = birth.year.length === 4;
   const navigate = useNavigate();
-
-  function handleCheckBirth() {
-    if (birth.year < 1900) {
+  const currentYear = getCurrentYear();
+  const handleCheckBirth = () => {
+    if (birth.year < 1900 || currentYear < birth.year) {
       getSign(birth.year);
     } else {
       getSign(birth.year);
       navigate("/horoscope");
     }
-  }
+  };
 
   return (
     <div className="mt-20 flex flex-col gap-y-14">
