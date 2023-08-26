@@ -13,9 +13,11 @@ function Modal({ value, onClick }) {
         tabIndex="0"
         aria-labelledby="modal-horoscope"
         aria-pressed={
-          !document
+          document
             .querySelector("#modalContainer")
             ?.classList.contains("hidden")
+            ? false
+            : document.querySelector("#modalContainer")
             ? true
             : false
         }

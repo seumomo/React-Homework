@@ -39,11 +39,14 @@
 
 ---
 
-## ID와 PW의 유효성 검사 기능 구현
+## Landing Page 기본 Animation
+
+(gasp, css-transition 활용)
 
 <div align="center">
-<img width="394" alt="스크린샷 2023-08-20 104903" src="https://github.com/seumomo/React-Homework/assets/127176650/dbb3f505-1fe7-43d9-8264-9ffb10f2c6ff">
-<img width="375" alt="스크린샷 2023-08-20 104917" src="https://github.com/seumomo/React-Homework/assets/127176650/f76cc9f3-c462-4e00-ab69-91cc6821800c">
+
+![mainAnimation](https://github.com/seumomo/Project-F4/assets/127176650/6371181a-0929-496f-b847-bb7241c99b8e)
+
 </div>
 
 1. ID와 PW의 `input value` / `validation` 여부를 상태로 관리하였다.
