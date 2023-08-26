@@ -7,11 +7,12 @@ function GetBirthYear() {
   const isFull = birth.year.length === 4;
   const navigate = useNavigate();
 
-  function handleCheckBirth(e) {
-    e.preventDefault();
-    navigate("/horoscope");
-    if (getSign(birth.year) === undefined) {
-      return;
+  function handleCheckBirth() {
+    if (birth.year < 1900) {
+      getSign(birth.year);
+    } else {
+      getSign(birth.year);
+      navigate("/horoscope");
     }
   }
 

@@ -1,6 +1,11 @@
 import PocketBase from "pocketbase";
-export const pb = new PocketBase("http://127.0.0.1:8090");
-
+import getDateType from "./../utils/getDateType";
+export const pb = new PocketBase("https://seumomo-taeilkim.pockethost.io");
 export const records = await pb
-  .collection("horoscope_by_korean_zodiac_sign_first")
+
+  .collection(
+    getDateType() === "Odd"
+      ? "horoscope_by_korean_zodiac_sign_first"
+      : "horoscope_by_korean_zodiac_sign_second",
+  )
   .getFullList();
