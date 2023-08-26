@@ -4,9 +4,10 @@ import Modal from "../components/Modal";
 import useBirth from "../hooks/useBirth";
 import useHoroscope from "../hooks/useHoroscope";
 import Navigation from "./../layout/Navigation";
+import GoHomeButton from "../components/GoHomeButton";
 
 function Horoscope() {
-  const [birth] = useBirth();
+  const { birth } = useBirth();
   const { koreanZodiacSign } = birth;
   const [targetHoroscope, setTargetHoroscope] = useState({
     koreanZodiacSign: "",
@@ -49,11 +50,12 @@ function Horoscope() {
         <div className="text-3xl">
           {`${koreanZodiacSign}`}의 오늘의 운세는 다음과 같아요.
         </div>
-        <div className="flex h-80 w-3/4 flex-col justify-center rounded-lg border-2 border-green-600 bg-yellow-500 p-5 text-center text-xl text-black">
+        <div className="flex h-80 w-3/4 flex-col justify-center rounded-lg border-2 border-green-500 bg-yellow-400 p-5 text-center text-xl text-black">
           {useHoroscope()}
         </div>
       </div>
       <Modal value={targetHoroscope} handleCloseModal={handleCloseModal} />
+      <GoHomeButton />
       <Navigation onClick={handleClickSign} />
     </div>
   );

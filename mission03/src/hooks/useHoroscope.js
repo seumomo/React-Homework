@@ -2,7 +2,7 @@ import { records } from "../api/pocketbase";
 import useBirth from "./useBirth";
 
 function useHoroscope() {
-  const [birth] = useBirth();
+  const { birth } = useBirth();
   const { koreanZodiacSign } = birth;
 
   if (!koreanZodiacSign) {

@@ -3,7 +3,7 @@ import useBirth from "../hooks/useBirth";
 import limitInputNumber from "./../utils/limitInputNumber";
 
 function GetBirthYear() {
-  const [birth, handleChangeYear, getSign] = useBirth();
+  const { birth, handleChangeYear, getSign } = useBirth();
   const isFull = birth.year.length === 4;
   const navigate = useNavigate();
 
@@ -47,7 +47,7 @@ function GetBirthYear() {
           </div>
           {isFull ? (
             <button
-              className="text-3xl font-bold text-green-500 transition-all"
+              className="text-3xl font-bold text-green-500 transition-all hover:scale-150"
               onClick={handleCheckBirth}
             >
               운세보러 가기! 👉

@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom";
 import useBirth from "./../hooks/useBirth";
 
-function Logo() {
+function GoHomeButton() {
   const { setBirth } = useBirth();
 
   return (
     <Link
       to="/"
-      className="mx-auto block w-5/6 rounded-full bg-red-700 py-7 text-center transition-all hover:scale-110"
+      className="mx-auto mt-10 flex h-16 w-1/3 items-center justify-center rounded-full bg-red-700 text-center text-2xl text-white transition-all hover:scale-125"
       onClick={() => {
         setBirth({ year: "", koreanZodiacSign: "" });
       }}
     >
-      <h1 className="text-6xl text-white">Can I buy... a lotto?</h1>
+      <p>처음으로 돌아가기 🏠</p>
     </Link>
   );
 }
 
-export default Logo;
+export default GoHomeButton;

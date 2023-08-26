@@ -22,10 +22,11 @@ function BirthProvider({ displayName = "BirthContext", children }) {
     }));
   };
 
-  const value = [birth, handleChangeYear, getSign];
-
   return (
-    <BirthContext.Provider value={value} displayName={displayName}>
+    <BirthContext.Provider
+      value={{ birth, setBirth, handleChangeYear, getSign }}
+      displayName={displayName}
+    >
       {children}
     </BirthContext.Provider>
   );

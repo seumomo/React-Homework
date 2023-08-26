@@ -11,7 +11,7 @@ function Navigation({ onClick }) {
               <li key={item.korean_zodiac_sign}>
                 <button
                   type="button"
-                  className="w-24 rounded-full bg-green-600 p-5 text-xs font-semibold text-white transition-all hover:scale-125"
+                  className="relative w-24 rounded-full bg-green-600 p-5 text-xs font-semibold text-white transition-all hover:scale-125"
                   onClick={onClick}
                 >
                   {item.korean_zodiac_sign}
