@@ -1,7 +1,8 @@
-/* eslint-disable react/prop-types */
 import { createContext, useState } from "react";
 import debounce from "../utils/debounce";
 import getKoreanZodiacSign from "../utils/getKoreanZodiacSign";
+import { string } from "prop-types";
+import { node } from "prop-types";
 
 export const BirthContext = createContext({});
 
@@ -31,5 +32,10 @@ function BirthProvider({ displayName = "BirthContext", children }) {
     </BirthContext.Provider>
   );
 }
+
+BirthProvider.propTypes = {
+  displayName: string,
+  children: node,
+};
 
 export default BirthProvider;
